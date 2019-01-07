@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        body{
+            background: whitesmoke;
+        }
+    </style>
+    <title>Type and Speak</title>
+</head>
+<!-- <body class="bg-dark text-white"> -->
+<body>
+    <div class="container text-center">
+        <!-- <img src="img/speech.png" class="mb-5"> -->
+        <img src="https://bcpsodl.pbworks.com/f/1477336923/TalkTyperLogo128.png" alt="" class="mb-6">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <textarea name="" id="text-input" placeholder="Type something...." class="bg-dark text-white form-control form-control-lg"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Rate</label>
+                        <div id="rate-value" class="text-white badge badge-primary float-right">1</div>
+                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" step="0.1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="pitch">Pitch</label>
+                        <div id="pitch-value" class="text-white badge badge-primary float-right">1</div>
+                        <input type="range" id="pitch" class="custom-range" min="0" max="2" step="0.1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <select id="voice-select" class="bg-dark text-white form-control form-control-lg"></select>
+                    </div>
+                    <button class="bg-dark text-white btn btn-light btn-lg btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+</body>
+</html>
